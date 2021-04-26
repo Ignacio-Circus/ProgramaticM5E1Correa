@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.header {
+    background-color: #EAC926;
+    padding: 20px;
+    font-size: 16px;
+}
+    .header-arriba {
+        display: flex;
+        flex-flow: wrap row;
+        margin-bottom: 20px;
+    }
+        .logo {
+            flex: 1 1 30%;
+        }
+        .buscador {
+            flex: 1 1 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cabeza {
+            margin-top: 10px;
+            flex: 2 1 100%;
+            text-align: center;
+        }
+        ul {
+            padding: 0%;
+            display: none;
+        }
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            .hamburguesa {
+                
+                background-color: rgb(85, 85, 211);
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                width: 50px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                border-radius: 9px;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+main.home {
+    background-color: #ebebeb;
+    padding-bottom: 20px;
+}
+    main.home section {
+        width: 90vw;
+        margin: auto;
+        padding-top: 10px;
+        
+    }
+    h2 {
+        font-size: 24px;
+    }
+    main.home article {
+        background-color: white;
+        margin: 10px;
+    }
+    main.home i {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border: solid 1px #39b54a;
+        border-radius: 50%;
+        color: rgb(36, 184, 36);
+        position: absolute;
+        right: 20px;
+        top: -15px;
+        background-color: #FFF;
+    }
+    .detalles {
+        border-top: solid 1px #ebebeb;
+        padding: 15px;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .precios {
+            font-size: 18px;
+            flex: 1 1 30%
+        }
+        .descuentos {
+            font-size: 16px;
+            color: rgb(36, 184, 36);
+            flex: 1 1 70%;
+        }
+        .nombre {
+            font-size: 16px;
+            color: #777777;
+            display: none;
+            flex: 1 1 100%;
+        }
+
+footer {
+    text-align: center;
+    margin: 10px;
+}
+    footer article{
+        margin-bottom: 10px;
+        margin: 25px;
+    }
+        footer article i {
+            font-size: 40px;
+            color: rgb(82, 82, 253);
+        }
+        .descripciones {
+            font-size: 12px;
+        }
+    footer p.copyright {
+        text-align: left;
+        color: #888888;
+        font-size: 12px;
+    }
+
+    @media (min-width: 361px) {
+        main.home article {
+            flex: 1 1 40%;
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+        main.home section h2 {
+            flex: 1 1 100%;
+        }
+        .hamburguesa {
+            display: none;
+        }
+        ul {
+            display: inline-block;
+        }
+        .listas {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul {
+            display: flex;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        main.home section {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .logo {
+            flex: 1 1 20%;
+        }
+        .buscador {
+            flex: 1 1 20%;
+        }
+        .cabeza{
+            margin-top: 0%;
+            flex: 1 1 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buscador input {
+            width: 200px;
+        }
+    }
+
+    @media (min-width: 769px) {
+        main.home article {
+            box-shadow: none;
+            flex: 1 1 15%;
+        }
+        main.home article:hover {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            transition-duration: 300ms;
+        }
+        main.home article:hover .nombre {
+            display: block;
+        }
+        main.home article:hover i {
+            animation: rotate 1.5s infinite normal;
+        }
+        @keyframes rotate {
+            0% {-webkit-transform: rotate(0deg);}
+            100% {-webkit-transform: rotate(360deg);}
+        }
+        footer {
+            display: flex;
+            flex-flow: wrap row;
+            
+        }
+            footer article {
+                flex: 1 1 25%;
+            }
+    }
+
+    
+
+main.register {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+    main.register form {
+        display: flex;
+        flex-flow: wrap column;
+    }
+        main.register form div {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+            main.register form div h3 {
+                padding-bottom: 10px;
+            }
+        main.register form div p {
+            margin-bottom: 10px;
+        }
+        main.register form div.botones {
+            display: flex;
+            flex-flow: column wrap;
+        }
+            main.register form div.botones button {
+                margin-top: 7px;
+                margin-bottom: 7px;
+                padding: 5px;
+            }
+
+
+
+main.login {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+    main.login form {
+        display: flex;
+        flex-flow: wrap column;
+    }
+        main.login form div {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+            main.login form div input {
+                width: 100%;
+            }
+        main.login form div.botones {
+            display: flex;
+            flex-flow: column wrap;
+        }
+            main.login form div.botones button {
+                margin-top: 7px;
+                margin-bottom: 7px;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            main.login form div.botones button:hover {
+                background-color: #0022AA;
+                color: white;
+                transition-duration: 300ms;
+            }
